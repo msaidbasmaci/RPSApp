@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-Jv-nHo">
+                                <rect key="frame" x="107" y="762" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UEY-FE-3Sn"/>
+                                    <constraint firstAttribute="width" constant="200" id="r2S-g7-Vsc"/>
+                                </constraints>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Awd-xU-pav"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="KmB-HO-k4h">
+                                <rect key="frame" x="132" y="473" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1nq-WH-70d"/>
+                                    <constraint firstAttribute="width" constant="150" id="LrC-uh-J8O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83b-uX-3RO">
+                                <rect key="frame" x="180" y="232" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoq-BM-BiD">
+                                <rect key="frame" x="180" y="643" width="54.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="wjr-pP-fvC">
+                                <rect key="frame" x="132" y="273" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="tKI-uW-AK3"/>
+                                    <constraint firstAttribute="width" constant="150" id="y8R-FB-HlR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t9L-Jv-nHo" secondAttribute="bottom" constant="50" id="67T-Rs-scu"/>
+                            <constraint firstItem="wjr-pP-fvC" firstAttribute="top" secondItem="83b-uX-3RO" secondAttribute="bottom" constant="20" id="NbU-C1-dJX"/>
+                            <constraint firstItem="hoq-BM-BiD" firstAttribute="top" secondItem="KmB-HO-k4h" secondAttribute="bottom" constant="20" id="RFe-Hj-h52"/>
+                            <constraint firstItem="83b-uX-3RO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sq0-4d-jJk"/>
+                            <constraint firstItem="KmB-HO-k4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adJ-KR-ewn"/>
+                            <constraint firstItem="KmB-HO-k4h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="ari-zB-wtz"/>
+                            <constraint firstItem="wjr-pP-fvC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="dAd-Ob-m2U"/>
+                            <constraint firstItem="hoq-BM-BiD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dei-pi-OJW"/>
+                            <constraint firstItem="t9L-Jv-nHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h54-xv-PvG"/>
+                            <constraint firstItem="wjr-pP-fvC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wMT-T5-Jqu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cpuImage" destination="wjr-pP-fvC" id="TU8-VO-IeJ"/>
+                        <outlet property="cpuLabel" destination="83b-uX-3RO" id="xcx-8d-5BS"/>
+                        <outlet property="playerImage" destination="KmB-HO-k4h" id="Aqj-NX-BmV"/>
+                        <outlet property="playerLabel" destination="hoq-BM-BiD" id="NEE-Wm-Yso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="256" height="256"/>
+        <image name="rock" width="256" height="256"/>
+    </resources>
+</document>
